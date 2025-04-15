@@ -21,11 +21,11 @@
   }
 
   .pagination .page-item.disabled .page-link {
-      color: rgba(0, 0, 0, 0.5); /* 無効ボタンの色 */
+      color: rgba(0, 0, 0, 0.5); 
   }
 
   .pagination .page-link {
-      font-size: 14px; /* フォントサイズを少し小さく */
+      font-size: 14px; 
   }
 }
 
@@ -37,7 +37,7 @@
 
   .spot-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* カラムを自動調整 */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
     width: 90%;
     margin: 0 auto;
@@ -81,6 +81,7 @@
   .show-dd {
     text-align: center;
   }
+
 /* サーフショップ一覧 */
   .pagination {
     margin-top: 2%;
@@ -91,6 +92,7 @@
   .shop-button {
     margin-bottom: 5%;
   }
+
 /* レビュー詳細ページ */ 
   .review {
     text-align: center;
@@ -98,13 +100,14 @@
 
   .row.justify-content-center {
     display: flex;
-    justify-content: center;  /* 中央配置 */
-    gap: 20px;  /* ボタンの間隔 */
+    justify-content: center;  
+    gap: 20px; 
   }
 
   .spots-details {
     margin-top: 50px;
   }
+
   /* ルール関連 */
   .rules-main {
     width: 70%;
@@ -164,8 +167,8 @@
 body {
   font-family: 'Figtree', sans-serif;
   background: url('/images/top.jpg') no-repeat center center fixed;
-  background-size: cover;  /* 横幅に合わせて縦にも全画面を埋める */
-  background-position: center center; /* 画像が中央に来るように調整 */
+  background-size: cover;  
+  background-position: center center; 
   min-height: 100vh;
   color: #fff;
 }
@@ -195,9 +198,9 @@ a {
 }
 
 .logo-img {
-  height: 60px;  /* 高さを調整 */
+  height: 60px;  
   width: auto;
-  max-width: 200px; /* 必要なら最大幅を設定 */
+  max-width: 200px; 
 }
 
 .logout {
@@ -227,7 +230,7 @@ h1 {
   color: white;
   border-radius: 5px;
   transition: 0.3s;
-  font-size: 1.1rem;  /* ボタン内の文字サイズを少し大きく */
+  font-size: 1.1rem; 
 }
 
 .btn:hover {
@@ -248,7 +251,6 @@ h1 {
   display: inline-block;
 }
 
-/* フッター全体のスタイル */
 footer {
   position: fixed;
   bottom: 0;
@@ -256,7 +258,7 @@ footer {
   right: 0;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  flex-direction: column; /* 縦方向に並べる */
+  flex-direction: column; 
   align-items: center;
   text-align: center;
   z-index: 1000;
@@ -265,20 +267,19 @@ footer {
 footer p {
   margin: 0;
 }
+
 /* ボタンを並べるためのコンテナ */
 .footer-buttons {
   display: flex;
-  gap: 10px; /* ボタン間の間隔 */
+  gap: 10px; 
 }
 
-/* コピーライトのスタイル */
 .footer-copyright {
   margin-top: 5px;
   font-size: 0.9rem;
   color: #ffffff;
 }
 
-/* ナビゲーションバーの中央配置 */
 .navbar-nav {
   display: flex;
   justify-content: center;
@@ -290,7 +291,7 @@ footer p {
 }
 
 .navbar-nav .nav-item {
-  margin: 0 15px; /* メニューアイテムの間隔 */
+  margin: 0 15px; 
 }
 
 .nav-item .nav-link.active {

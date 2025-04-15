@@ -10,7 +10,7 @@ window.onscroll = function () {
   }
 };
 
-// トップに戻る関数（HTMLから使えるように）
+// トップに戻る関数
 window.scrollToTop = function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };

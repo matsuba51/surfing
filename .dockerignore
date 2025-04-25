@@ -1,0 +1,22 @@
+# OS関連
+.DS_Store
+
+# Laravelの不要ファイル
+/vendor
+/node_modules
+/storage/*.key
+.env
+
+# Git関連
+.git
+.gitignore
+
+# テストやドキュメント
+/tests
+.phpunit.result.cache
+
+# IDE・エディタ関連
+.idea
+.vscode
+*.swp
+*.swo

@@ -21,5 +21,4 @@ $app->bind('path.public', function() {
     return __DIR__;
 });
 
-
 $app->handleRequest(Request::capture());

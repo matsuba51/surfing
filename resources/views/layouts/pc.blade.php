@@ -10,8 +10,7 @@
     <!-- 以下、Bootstrap 5　関連 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-
+    <link href="{{ mix('/build/assets/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -49,7 +48,7 @@
 
     @yield('content')
 
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{ mix('/build/assets/app.js') }}"></script>
     <footer>
         <p class="footer-copyright">&copy; {{ date('Y') }} Surfing Information. All Rights Reserved.</p>
     </footer>

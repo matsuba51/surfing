@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet">
     <!-- 以下、Bootstrap 5 関連 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="{{ asset('build/assets/app.css') }}">
+    @vite(['resources/css/app.css'])
+</head>
 
 <body class="font-sans antialiased">
     <div class="d-flex flex-column min-vh-100">
@@ -35,10 +35,13 @@
             </div>
         </main>
 
-        <script src="{{ asset('build/assets/app.js') }}"></script>
+       
         <footer>
             <p class="footer-copyright">&copy; {{ date('Y') }} Surfing Information. All Rights Reserved.</p>
         </footer>
-    </div>
+    </div> 
+
+    @vite(['resources/js/app.js'])
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

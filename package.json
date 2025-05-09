@@ -1,13 +1,9 @@
 {
     "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-poll",
-        "prod": "npm run production",
-        "production": "mix --production",
-        "build": "npm run production"
+   "scripts": {
+    "dev": "vite",              
+    "build": "vite build",      
+    "serve": "vite preview"    
     },
     "devDependencies": {
         "@babel/core": "^7.26.10",

@@ -7,4 +7,4 @@ mix.js('resources/js/app.js', 'public/build/assets/app.js')
       resolve: {
         extensions: ['.js', '.jsx', '.json']
       }
-   });
+   })

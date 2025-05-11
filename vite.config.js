@@ -9,7 +9,6 @@ export default defineConfig({
     }),
   ],
   build: {
-    outDir: 'public/build',
-    assetsDir: 'assets',
+    manifest: true,
   },
 });

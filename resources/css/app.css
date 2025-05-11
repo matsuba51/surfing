@@ -166,7 +166,7 @@
 
 body {
   font-family: 'Figtree', sans-serif;
-  background: url('/surfing/images/top.jpg') no-repeat center center fixed;
+  background: url('/images/top.jpg') no-repeat center center fixed;
   background-size: cover;  
   background-position: center center; 
   min-height: 100vh;

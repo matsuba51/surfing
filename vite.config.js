@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import { Exception } from 'sass';
 
 export default defineConfig({
   plugins: [
@@ -9,4 +8,8 @@ export default defineConfig({
       refresh: true,
     }),
   ],
+  build: {
+    outDir: 'public/build',
+    assetsDir: 'assets',
+  },
 });

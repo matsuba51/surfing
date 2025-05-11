@@ -9,12 +9,13 @@ export default defineConfig({
     }),
   ],
   build: {
-    outDir: 'public/assets',  // 出力先を public/assets に変更
+    outDir: 'public/assets',
     manifest: true,
     rollupOptions: {
       output: {
-        assetFileNames: '[name][ext]', // assets/assets/ とならないように設定
+        assetFileNames: '[name][ext]',  // app.css, app.js のように出力
         entryFileNames: '[name].js',
+        chunkFileNames: '[name].js',
       },
     },
   },

@@ -8,15 +8,4 @@ export default defineConfig({
       refresh: true,
     }),
   ],
-  build: {
-    outDir: 'public/assets',
-    manifest: true,
-    rollupOptions: {
-      output: {
-        assetFileNames: '[name][ext]',  // app.css, app.js のように出力
-        entryFileNames: '[name].js',
-        chunkFileNames: '[name].js',
-      },
-    },
-  },
 });

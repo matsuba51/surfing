@@ -47,7 +47,6 @@
 
     @yield('content')
 
-    <script src="{{ asset('build/assets/app.js') }}"></script>
     <footer>
         <p class="footer-copyright">&copy; {{ date('Y') }} Surfing Information. All Rights Reserved.</p>
     </footer>

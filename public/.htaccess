@@ -4,6 +4,8 @@
     </IfModule>
 
     RewriteEngine On
+    # Allow access to build/assets directory
+    RewriteRule ^build/assets/(.*)$ build/assets/$1 [L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

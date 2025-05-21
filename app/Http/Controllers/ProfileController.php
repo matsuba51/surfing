@@ -8,19 +8,22 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
-use Jenssegers\Agent\Agent;
 
 class ProfileController extends Controller
 {
+    /**
+     * Display the user's profile form.
+     */
     public function edit(Request $request): View
     {
-        $isMobile = (new Agent())->isMobile();
-        $layout = $isMobile ? 'layouts.mobile' : 'layouts.pc';
-        $user = $request->user();
-
-        return view('profile.edit', compact('user', 'layout'));
+        return view('profile.edit', [
+            'user' => $request->user(),
+        ]);
     }
 
+    /**
+     * Update the user's profile information.
+     */
     public function update(ProfileUpdateRequest $request): RedirectResponse
     {
         $request->user()->fill($request->validated());
@@ -31,9 +34,12 @@ class ProfileController extends Controller
 
         $request->user()->save();
 
-        return Redirect::route('profile.edit')->with('status', 'profile-updated')->with('success', 'プロフィールが更新されました！')->with('message_type', 'alert-success');
+        return Redirect::route('profile.edit')->with('status', 'profile-updated');
     }
 
+    /**
+     * Delete the user's account.
+     */
     public function destroy(Request $request): RedirectResponse
     {
         $request->validateWithBag('userDeletion', [
@@ -49,6 +55,6 @@ class ProfileController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return Redirect::to('/')->with('success', 'アカウントが削除されました。ご利用ありがとうございました。')->with('message_type', 'alert-info');
+        return Redirect::to('/');
     }
 }

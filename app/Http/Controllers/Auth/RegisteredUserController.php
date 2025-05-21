@@ -44,7 +44,7 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
 
         Auth::login($user);
-        
-        return redirect()->intended(route('home').'?verified=1');
+
+        return redirect(route('dashboard', absolute: false));
     }
 }

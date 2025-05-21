@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet">
     <!-- 以下、Bootstrap 5　関連 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('build/assets/app.css') }}">
     @vite(['resources/css/app.css'])
 </head>
 

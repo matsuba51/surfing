@@ -29,14 +29,17 @@
                             <a class="nav-link" href="{{ route('login') }}">ログイン</a>
                         </li>
                     @else
-                            <!-- 管理者メニュー -->
-                            @if (Auth::user()->isAdmin())
-                                <a class="fs-5 text-decoration-none text-dark control" href="{{ route('admin.dashboard') }}">管理画面</a>
-                            @endif
-                        
+                        <!-- 管理者メニュー -->
+                        @if (Auth::user()->isAdmin())
+                            <li class="nav-item fs-5">
+                                <a class="nav-link text-dark control" href="{{ route('admin.dashboard') }}">管理画面</a>
+                            </li>
+                        @endif
+
+                        <li class="nav-item fs-5">
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
-                                <button type="submit" class="fs-5 logout">ログアウト</button>
+                                <button type="submit" class="btn btn-link nav-link logout">ログアウト</button>
                             </form>
                         </li>
                     @endguest
